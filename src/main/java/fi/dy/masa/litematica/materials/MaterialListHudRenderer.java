@@ -176,7 +176,7 @@ public class MaterialListHudRenderer implements IInfoHudRenderer
 
         for (int i = 0; i < size; ++i)
         {
-            mc.getItemRenderer().renderInGui(list.get(i).getStack(), x, y);
+            mc.getItemRenderer().renderInGui(matrixStack, list.get(i).getStack(), x, y);
             y += lineHeight;
         }
 

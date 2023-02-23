@@ -176,7 +176,7 @@ public class WidgetSchematicEntry extends WidgetListEntryBase<LitematicaSchemati
         {
             if (this.type == Type.CREATE_PLACEMENT)
             {
-                BlockPos pos = new BlockPos(this.widget.mc.player.getPos());
+                BlockPos pos = BlockPos.method_49638(this.widget.mc.player.getPos());
                 LitematicaSchematic entry = this.widget.schematic;
                 String name = entry.getMetadata().getName();
                 boolean enabled = GuiBase.isShiftDown() == false;
