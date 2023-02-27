@@ -373,7 +373,7 @@ public class GuiPlacementConfiguration  extends GuiListBase<SubRegionPlacement, 
 
                 case MOVE_TO_PLAYER:
                 {
-                    BlockPos pos = BlockPos.method_49638(mc.player.getPos());
+                    BlockPos pos = BlockPos.ofFloored(mc.player.getPos());
                     this.placement.setOrigin(pos, this.parent);
                     break;
                 }

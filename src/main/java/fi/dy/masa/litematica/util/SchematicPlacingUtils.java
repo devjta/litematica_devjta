@@ -392,7 +392,7 @@ public class SchematicPlacingUtils
                     // Update the sleeping position to the current position
                     if (entity instanceof LivingEntity living && living.isSleeping())
                     {
-                        living.setSleepingPosition(BlockPos.method_49637(x, y, z));
+                        living.setSleepingPosition(BlockPos.ofFloored(x, y, z));
                     }
 
                     EntityUtils.spawnEntityAndPassengersInWorld(entity, world);
